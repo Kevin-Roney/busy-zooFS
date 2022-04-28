@@ -13,8 +13,8 @@ export default function OpenClose() {
       <h3>
         {
           isOpen
-            ? 'Welcome to the Oregon Zoon!'
-            : 'Sorry we are closed, see you next time!'
+            ? 'Welcome to the Sketchy Roadside Zoo!'
+            : 'Sorry we are closed, too bad!'
         }
       </h3>
       <button onClick={handleOpenZoo}>☀️</button>
