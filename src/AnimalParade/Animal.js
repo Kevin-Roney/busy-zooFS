@@ -1,7 +1,13 @@
 import React from 'react';
 
-export default function Animal() {
+export default function Animal({ animal }) {
   return (
-    <div>Animal</div>
+    <>
+      {animal === 'rat' && <span>🐀</span>}
+      {animal === 'raccoon' && <span>🦝</span>}
+      {animal === 'skunk' && <span>🦨</span>}
+      {animal === 'bat' && <span>🦇</span>}
+    </>
   );
 }
+
