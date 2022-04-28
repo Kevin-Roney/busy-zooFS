@@ -29,9 +29,9 @@ export default function AnimalParade() {
         }
       </div>
       <button onClick={handleAddRat}>Oh hecc more Rats!</button>
-      <button onClick={handleAddRaccoon}>Oh hecc more Raccoons!</button>
-      <button onClick={handleAddBat}>Oh hecc more Bats!</button>
-      <button onClick={handleAddSkunk}>Oh hecc more Skunks!</button>
+      <button onClick={handleAddRaccoon}>The majestic trash panda</button>
+      <button onClick={handleAddBat}>Oops all Bats!</button>
+      <button onClick={handleAddSkunk}>PU moar Skunks!</button>
     </div>
   );
 }
