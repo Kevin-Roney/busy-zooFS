@@ -10,13 +10,13 @@ export default function OpenClose() {
   }
   return (
     <div>
-      <div>
+      <h3>
         {
           isOpen
-            ? 'Welcome to the Oregon Zoon!' 
+            ? 'Welcome to the Oregon Zoon!'
             : 'Sorry we are closed, see you next time!'
         }
-      </div>
+      </h3>
       <button onClick={handleOpenZoo}>☀️</button>
       <button onClick={handleCloseZoo}>🌙</button>
     </div>
