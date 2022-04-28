@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import FightClub from './FightClub/FightClub';
+import OpenClose from './OpenClose/OpenClose';
+import AnimalParade from './AnimalParade/AnimalParade';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FightClub/>
+      <hr/>
+      <OpenClose/>
+      <hr/>
+      <AnimalParade/>
     </div>
   );
 }
