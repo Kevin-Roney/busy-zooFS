@@ -14,7 +14,7 @@ export default function OpenClose({ isOpen, setIsOpen }) {
         {
           isOpen
             ? 'We are open, please have your waivers signed and your money ready!'
-            : 'We are closed, too bad!'
+            : 'We are closed.. Too Bad!'
         }
       </h1>
       <div>
