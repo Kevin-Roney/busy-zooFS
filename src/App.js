@@ -22,7 +22,8 @@ function App() {
         setSharkStrength={setSharkStrength} 
         octopusStrength={octopusStrength} 
         setOctopusStrength={setOctopusStrength} 
-        ATTACK_MODIFIER={ATTACK_MODIFIER}/>
+        ATTACK_MODIFIER={ATTACK_MODIFIER}
+      />
       <hr/>
       <OpenClose
         isOpen={isOpen}
