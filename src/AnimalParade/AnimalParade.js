@@ -1,4 +1,5 @@
 import Animal from './Animal';
+import React from 'react';
 
 export default function AnimalParade({ animals, setAnimals }) {
   function handleAddRat() {

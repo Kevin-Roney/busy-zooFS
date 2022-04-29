@@ -1,3 +1,4 @@
+import React from 'react';
 
 export default function FightClub({ setSharkStrength, sharkStrength, octopusStrength, setOctopusStrength, ATTACK_MODIFIER }) {
   function handleSharkShrink() {

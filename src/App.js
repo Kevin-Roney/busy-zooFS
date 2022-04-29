@@ -5,16 +5,18 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
+  //FightClub State
   const [sharkStrength, setSharkStrength] = useState(5);
   const [octopusStrength, setOctopusStrength] = useState(5);
   const ATTACK_MODIFIER = .1;
-
+  //OpenClose State
   const [isOpen, setIsOpen] = useState(false);
-
+  //AnimalParade State
   const [animals, setAnimals] = useState(['rat', 'rat', 'skunk']);
 
   return (
     <div className="App">
+      <h1>Welcome to the Sketchy Roadside Zoo!</h1>
       <FightClub 
         sharkStrength={sharkStrength} 
         setSharkStrength={setSharkStrength} 
