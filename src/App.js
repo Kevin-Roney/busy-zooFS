@@ -10,7 +10,7 @@ function App() {
   const [octopusStrength, setOctopusStrength] = useState(5);
   const ATTACK_MODIFIER = .1;
   //OpenClose State
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState('open', 'close', 'dio');
   //AnimalParade State
   const [animals, setAnimals] = useState(['rat', 'rat', 'skunk']);
 

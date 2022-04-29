@@ -40,16 +40,24 @@ button {
   height: 260px;
 }
 
-.open-is-true {
+.open-is-open {
   background-color: gold;
 }
 
-.open-is-false {
+.open-is-closed {
   background-color: rgb(2, 2, 92);
   color: white;
+}
+
+.open-is-dio {
+  background-color: white;
 }
 
 .parade {
   display: grid;
   grid-template-rows: .1fr .1fr .5fr 1fr;
+}
+
+.Dio {
+  width: 200px;
 }
