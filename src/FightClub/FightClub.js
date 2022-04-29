@@ -1,10 +1,5 @@
-import React, { useState } from 'react';
 
-export default function FightClub() {
-  const [sharkStrength, setSharkStrength] = useState(5);
-  const [octopusStrength, setOctopusStrength] = useState(5);
-  const ATTACK_MODIFIER = .1;
-
+export default function FightClub({ setSharkStrength, sharkStrength, octopusStrength, setOctopusStrength, ATTACK_MODIFIER }) {
   function handleSharkShrink() {
     setSharkStrength(sharkStrength - ATTACK_MODIFIER);
   }

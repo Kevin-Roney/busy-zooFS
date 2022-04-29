@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
 import Animal from './Animal';
 
-export default function AnimalParade() {
-  const [animals, setAnimals] = useState(['rat', 'rat', 'skunk']);
-
+export default function AnimalParade({ animals, setAnimals }) {
   function handleAddRat() {
     animals.push('rat');
     setAnimals([...animals]);
@@ -23,6 +20,8 @@ export default function AnimalParade() {
 
   return (
     <div className='parade'>
+      <h1>Petting Zoo Admission $25</h1>
+      <p>NO REFUNDS</p>
       <div>
         {
           animals.map((animal) => <Animal key={animal} animal={animal}/>)
@@ -31,7 +30,7 @@ export default function AnimalParade() {
       <button onClick={handleAddRat}>Oh hecc more Rats!</button>
       <button onClick={handleAddRaccoon}>The majestic trash panda</button>
       <button onClick={handleAddBat}>Oops all Bats!</button>
-      <button onClick={handleAddSkunk}>PU moar Skunks!</button>
+      <button onClick={handleAddSkunk}>P U moar Skunks!</button>
     </div>
   );
 }
