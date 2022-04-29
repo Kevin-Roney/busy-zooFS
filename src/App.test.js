@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 import FightClub from './FightClub/FightClub';
-import AnimalParade from './AnimalParade/AnimalParade';
 
 test('renders Welcome to the Sketchy Roadside Zoo! string', () => {
   render(<App />);
