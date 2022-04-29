@@ -14,20 +14,24 @@ export default function FightClub({ setSharkStrength, sharkStrength, octopusStre
     setOctopusStrength(octopusStrength + ATTACK_MODIFIER);
   }
   return (
-    <div className='fight-club'>
+    <div className='FightClub'>
       <div className='animal'>
         <div className='fighter' style={{ fontSize: `${sharkStrength}rem` }}>
           🦈
         </div>
-        <button onClick={handleSharkGrow}>The Shark is charging up!</button>
-        <button onClick={handleOctopusShrink}>The Shark uses Sharknado!</button>
+        <div className='FightButtons'>
+          <button className='FightButton' onClick={handleSharkGrow}>The Shark is charging up!</button>
+          <button className='FightButton' onClick={handleOctopusShrink}>The Shark uses Sharknado!</button>
+        </div>
       </div>
       <div className='animal'>
         <div className='fighter' style={{ fontSize: `${octopusStrength}rem` }}>
           🐙
         </div>
-        <button onClick={handleOctopusGrow}>The Octopus is charging up!</button>
-        <button onClick={handleSharkShrink}>The Octopus uses Constrict!</button>
+        <div className='FightButtons'>
+          <button className='FightButton' onClick={handleOctopusGrow}>The Octopus is charging up!</button>
+          <button className='FightButton' onClick={handleSharkShrink}>The Octopus uses Constrict!</button>
+        </div>
       </div>
     </div>
   );

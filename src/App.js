@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Welcome to the Sketchy Roadside Zoo!</h1>
+      <h1 className='Title'>Welcome to the Sketchy Roadside Zoo!</h1>
       <FightClub 
         sharkStrength={sharkStrength} 
         setSharkStrength={setSharkStrength} 
@@ -24,12 +24,10 @@ function App() {
         setOctopusStrength={setOctopusStrength} 
         ATTACK_MODIFIER={ATTACK_MODIFIER}
       />
-      <hr/>
-      <OpenClose
+      <OpenClose 
         isOpen={isOpen}
         setIsOpen={setIsOpen}
       />
-      <hr/>
       <AnimalParade
         animals={animals}
         setAnimals={setAnimals}
