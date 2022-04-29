@@ -25,7 +25,7 @@ export default function AnimalParade({ animals, setAnimals }) {
       <p>NO REFUNDS</p>
       <div>
         {
-          animals.map((animal) => <Animal key={animal} animal={animal}/>)
+          animals.map((animal, index) => <Animal key={animal + index} animal={animal}/>)
         }
       </div>
       <button onClick={handleAddRat}>Oh hecc more Rats!</button>
