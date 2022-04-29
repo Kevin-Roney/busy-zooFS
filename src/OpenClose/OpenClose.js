@@ -13,7 +13,7 @@ export default function OpenClose({ isOpen, setIsOpen }) {
       <h1>
         {
           isOpen
-            ? 'We are open, please have your waivers signed and your money ready!'
+            ? 'We are open, have your waivers signed and cash in hand!'
             : 'We are closed.. Too Bad!'
         }
       </h1>
