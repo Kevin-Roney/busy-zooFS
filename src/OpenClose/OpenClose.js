@@ -22,7 +22,7 @@ export default function OpenClose({ isOpen, setIsOpen }) {
       <div>
         {isOpen === 'open' && <h1>We are open, have your waivers signed and cash in hand!</h1>}
         {isOpen === 'closed' && <h1>We are closed.. Too Bad!</h1>}
-        {isOpen === 'dio' && <img className='Dio' src={Dio}/>}
+        {isOpen === 'dio' && <div>You were expecting just a string, but it was me, Dio!<img className='Dio' src={Dio}/></div>}
       </div>
       <div>
         <button onClick={handleOpenZoo}>☀️</button>
