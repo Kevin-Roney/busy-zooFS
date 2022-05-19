@@ -1,39 +1,37 @@
-import FightClub from './FightClub/FightClub';
-import OpenClose from './OpenClose/OpenClose';
-import AnimalParade from './AnimalParade/AnimalParade';
-import { useState } from 'react';
-import './App.css';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
+import ZooPage from './ZooPage';
+import AdminPage from './AdminPage';
 
-function App() {
-  //FightClub State
-  const [sharkStrength, setSharkStrength] = useState(5);
-  const [octopusStrength, setOctopusStrength] = useState(5);
-  const ATTACK_MODIFIER = .1;
-  //OpenClose State
-  const [isOpen, setIsOpen] = useState('open', 'close', 'dio');
-  //AnimalParade State
-  const [animals, setAnimals] = useState(['rat', 'rat', 'skunk']);
 
+export default function App() {
   return (
-    <div className="App">
-      <h1 className='Title'>Welcome to the Sketchy Roadside Zoo!</h1>
-      <FightClub 
-        sharkStrength={sharkStrength} 
-        setSharkStrength={setSharkStrength} 
-        octopusStrength={octopusStrength} 
-        setOctopusStrength={setOctopusStrength} 
-        ATTACK_MODIFIER={ATTACK_MODIFIER}
-      />
-      <OpenClose 
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-      />
-      <AnimalParade
-        animals={animals}
-        setAnimals={setAnimals}
-      />
-    </div>
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/admin">Admin</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path="/admin">
+            <AdminPage />
+          </Route>
+          <Route path="/">
+            <ZooPage />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
-export default App;

@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import App from './App';
+import App from './ZooPage';
 import FightClub from './FightClub/FightClub';
 
 test('renders Welcome to the Sketchy Roadside Zoo! string', () => {
