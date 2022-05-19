@@ -1,6 +1,7 @@
 import React from 'react';
 import Dio from '../dio.png';
 import Noice from '../orchastra-cut2.mp3';
+import CustomButton from '../CustomButton';
 
 export default function OpenClose({ isOpen, setIsOpen }) {
   const audio = new Audio(Noice);
@@ -25,9 +26,9 @@ export default function OpenClose({ isOpen, setIsOpen }) {
         {isOpen === 'dio' && <div>You were expecting just a string, but it was me, Dio!<img className='Dio' src={Dio}/></div>}
       </div>
       <div>
-        <button onClick={handleOpenZoo}>Open</button>
-        <button onClick={handleCloseZoo}>Close</button>
-        <button onClick={handleDio}>❓</button>
+        <CustomButton onClick={handleOpenZoo}>Open</CustomButton>
+        <CustomButton onClick={handleCloseZoo}>Close</CustomButton>
+        <CustomButton onClick={handleDio}>❓</CustomButton>
       </div>
     </div>
   );

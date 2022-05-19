@@ -1,4 +1,5 @@
 import React from 'react';
+import CustomButton from '@mui/material/Button';
 
 export default function FightClub({ setSharkStrength, sharkStrength, octopusStrength, setOctopusStrength, ATTACK_MODIFIER }) {
   function handleSharkShrink() {
@@ -20,8 +21,8 @@ export default function FightClub({ setSharkStrength, sharkStrength, octopusStre
           🦈
         </div>
         <div className='FightButtons'>
-          <button className='FightButton' onClick={handleSharkGrow}>The Shark is charging up!</button>
-          <button className='FightButton' onClick={handleOctopusShrink}>The Shark uses Sharknado!</button>
+          <CustomButton className='FightButton' onClick={handleSharkGrow}>The Shark is charging up!</CustomButton>
+          <CustomButton className='FightButton' onClick={handleOctopusShrink}>The Shark uses Sharknado!</CustomButton>
         </div>
       </div>
       <div className='animal'>
@@ -29,8 +30,8 @@ export default function FightClub({ setSharkStrength, sharkStrength, octopusStre
           🐙
         </div>
         <div className='FightButtons'>
-          <button className='FightButton' onClick={handleOctopusGrow}>The Octopus is charging up!</button>
-          <button className='FightButton' onClick={handleSharkShrink}>The Octopus uses Constrict!</button>
+          <CustomButton className='FightButton' onClick={handleOctopusGrow}>The Octopus is charging up!</CustomButton>
+          <CustomButton className='FightButton' onClick={handleSharkShrink}>The Octopus uses Constrict!</CustomButton>
         </div>
       </div>
     </div>

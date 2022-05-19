@@ -7,7 +7,8 @@ export default function CustomButton({ children, onClick }) {
       <Button onClick={onClick} variant='contained'
         sx={{
           width: 300,
-          border: 'solid 1px pink'
+          border: 'solid 1px pink',
+          background: 'red'
         }}
       >
         {children}

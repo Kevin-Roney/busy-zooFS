@@ -1,5 +1,6 @@
 import Animal from './Animal';
 import React from 'react';
+import CustomButton from '../CustomButton';
 
 export default function AnimalParade({ animals, setAnimals }) {
   function handleAddRat() {
@@ -29,10 +30,10 @@ export default function AnimalParade({ animals, setAnimals }) {
         }
       </div>
       <div>
-        <button onClick={handleAddRat}>Oh hecc more Rats!</button>
-        <button onClick={handleAddRaccoon}>The majestic trash panda</button>
-        <button onClick={handleAddBat}>Oops all Bats!</button>
-        <button onClick={handleAddSkunk}>P U moar Skunks!</button>
+        <CustomButton onClick={handleAddRat}>Oh hecc more Rats!</CustomButton>
+        <CustomButton onClick={handleAddRaccoon}>The majestic trash panda</CustomButton>
+        <CustomButton onClick={handleAddBat}>Oops all Bats!</CustomButton>
+        <CustomButton onClick={handleAddSkunk}>P U moar Skunks!</CustomButton>
       </div>
     </div>
   );
