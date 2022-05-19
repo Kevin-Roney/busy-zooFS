@@ -3,7 +3,6 @@ import { VictoryBar, VictoryPie, VictoryTheme, VictoryChart } from 'victory';
 import { customers } from './data';
 
 export default function MyChart() {
-  console.log(customers.gender);
   return (
     <div>
       <VictoryChart
