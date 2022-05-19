@@ -25,8 +25,8 @@ export default function OpenClose({ isOpen, setIsOpen }) {
         {isOpen === 'dio' && <div>You were expecting just a string, but it was me, Dio!<img className='Dio' src={Dio}/></div>}
       </div>
       <div>
-        <button onClick={handleOpenZoo}>☀️</button>
-        <button onClick={handleCloseZoo}>🌙</button>
+        <button onClick={handleOpenZoo}>Open</button>
+        <button onClick={handleCloseZoo}>Close</button>
         <button onClick={handleDio}>❓</button>
       </div>
     </div>
