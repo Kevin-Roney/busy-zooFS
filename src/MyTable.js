@@ -1,6 +1,6 @@
 import React from 'react';
 import MaterialTable from 'material-table';
-import { data } from './data';
+import { customers } from './data';
 
 export default function MyTable() {
   return (
@@ -16,7 +16,7 @@ export default function MyTable() {
             { title: 'Country', field: 'county' }
           ]
         }
-        data={data}
+        data={customers}
     
         title="Customer Data"
         options={{  
@@ -27,13 +27,7 @@ export default function MyTable() {
             background: 'lightgrey',
           }
         }
-        }
-        localization={{
-          pagination: {
-            nextAriaLabel: '>',
-            previousAriaLabel: '<'
-          } 
-        }}
+        }  
       />      
     </div>
   );
