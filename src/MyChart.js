@@ -1,9 +1,5 @@
 import React from 'react';
 import { VictoryBar, VictoryPie, VictoryTheme, VictoryChart } from 'victory';
-<<<<<<< HEAD
-=======
-
->>>>>>> d6212602ee4356534da06a3b30ea000022d088e9
 
 export default function MyChart() {
   return (
