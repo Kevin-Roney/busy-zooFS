@@ -23,3 +23,9 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+***FOR RUBRIC REFERENCE***
+https://github.com/alchemycodelab/react-busy-zoo
+
+![layout](../../public/Images/busy-town-layout.jpg)
+![file layout](../../public/Images/file-layout.jpg)
