@@ -29,3 +29,18 @@ test('when you click the sun emoji renders We are open, have your waivers signed
   const openZooEl = screen.queryByText(/We are open, have your waivers signed and cash in hand!/i);
   expect(openZooEl).toBeInTheDocument();
 });
+
+test('When user clicks the Oops all Bats! button it will add a bat emoji to the array', () => {
+  render(<App />);
+  
+  const bats = screen.queryAllByText(/🦇/i);
+  const batsInArrayStart = bats.length; 
+  const addBatButton = screen.queryByText(/Oops all Bats!/i);
+  expect(bats.length).toBe(0);
+
+  fireEvent.click(addBatButton);
+
+
+  const batsAdded = screen.queryAllByText(/🦇/i);
+  expect(batsAdded.length).toBe(batsInArrayStart + 1);
+});
